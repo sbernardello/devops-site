@@ -1,0 +1,67 @@
+baseURL = 'http://example.org/'
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = 'DevOps tools'
+theme = "hugo-theme-docport"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+disableKinds = ["taxonomy", "taxonomyTerm", "category", "RSS"]
+
+[params]
+ordersectionsby = "weight" # ordersectionsby = "title"
+disableSearch = false
+color_main = "#B0B0B0"
+color_second = "blue"
+disableNavChevron = false # set true to hide next/prev chevron, default is false
+menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# Keep this as is
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+# Code highlight configuration
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 2
+
+[[menu.shortcuts]]
+name = "Github"
+identifier = "ds"
+url = "https://github.com/mobiletechnologies/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "About me"
+identifier = "ab"
+url = "https://github.com/mobiletechnologies/"
+weight = 10
+
+#[[menu.shortcuts]]
+#name = "Download"
+#url = "https://github.com/vjeantet/hugo-theme-docport/archive/master.zip"
+#weight = 11
+
+[[menu.shortcuts]]
+name = "Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "Credits"
+url = "/docport/credits/"
+weight = 30
